@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/divider_2" />
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_gravity="top"
+                    android:background="@color/violet_773FE3"
+                    android:theme="@style/AppTheme.AppBarLight"
+                    app:popupTheme="@style/AppTheme.Popup"
+                    app:subtitleTextColor="@color/white"
+                    app:titleTextColor="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/top_throw_advertisement"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+
+                </android.support.v7.widget.Toolbar>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_2" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.baidu.mapapi.map.TextureMapView
+                    android:id="@+id/bmapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true" />
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/px100"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_phone"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/d06"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_equipment"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/d07"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_marginTop="@dimen/px160"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            app:rv_cornerRadius="@dimen/px10"
+            app:rv_backgroundColor="@color/white">
+
+            <LinearLayout
+                android:id="@+id/ly_location"
+                android:padding="@dimen/px20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:hint="@string/Please_enter_the_placement_position"
+                    style="@style/Tv15gray_5D5C5A" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_999999"/>
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px20"
+                    android:background="@mipmap/d03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_1"/>
+
+            <LinearLayout
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_margin="@dimen/px20"
+                    android:text="@string/location_position"
+                    style="@style/Tv15gray_5D5C5A" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:gravity="left"
+                    android:id="@+id/tv_location"
+                    style="@style/Tv15gray_5D5C5A" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_1"/>
+
+            <LinearLayout
+                android:id="@+id/ly_delivery"
+                android:visibility="gone"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_margin="@dimen/px20"
+                    android:text="@string/scope_delivery"
+                    style="@style/Tv15gray_5D5C5A" />
+
+                <TextView
+                    android:id="@+id/tv_delivery"
+                    android:paddingLeft="@dimen/px20"
+                    android:paddingRight="@dimen/px20"
+                    android:background="@mipmap/d13"
+                    android:layout_width="match_parent"
+                    android:text="一公里"
+                    android:drawableRight="@mipmap/d11"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:gravity="left|center"
+                    style="@style/Tv15gray_5D5C5A" />
+
+            </LinearLayout>
+
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </FrameLayout>
+
+</layout>

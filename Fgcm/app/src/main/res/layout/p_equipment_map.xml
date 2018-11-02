@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:padding="@dimen/px50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:background="@mipmap/d16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:text="设备名称"
+                        style="@style/Tv15Bkla"/>
+
+                    <TextView
+                        android:id="@+id/tv_id"
+                        android:text="设备名称"
+                        style="@style/Tv15Bkla"/>
+
+                    <TextView
+                        android:id="@+id/tv_model"
+                        android:text="设备名称"
+                        style="@style/Tv15Bkla"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="设备地址："
+                            style="@style/Tv15Bkla"/>
+
+                        <TextView
+                            android:gravity="left"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:id="@+id/tv_address"
+                            style="@style/Tv15Bkla"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_finish"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/d15"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_marginTop="@dimen/px50"
+            android:padding="@dimen/px20"
+            android:background="@color/violet_773FE3"
+            android:text="@string/can_in"
+            android:layout_width="match_parent"
+            style="@style/Tv15white" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

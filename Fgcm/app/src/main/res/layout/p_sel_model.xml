@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:background="@mipmap/d17"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_map"
+            android:padding="@dimen/px20"
+            android:layout_width="match_parent"
+            android:text="地图模式"
+            style="@style/Tv15Bkla"/>
+
+        <View
+            style="@style/divider_1"/>
+
+        <TextView
+            android:id="@+id/tv_list"
+            android:padding="@dimen/px20"
+            android:layout_width="match_parent"
+            android:text="列表模式"
+            style="@style/Tv15Bkla"/>
+
+    </LinearLayout>
+
+</FrameLayout>

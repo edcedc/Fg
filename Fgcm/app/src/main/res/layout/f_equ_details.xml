@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_top" />
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_f4f4f4"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/px20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/px20">
+
+                        <TextView
+                            android:id="@+id/tv_order"
+                            style="@style/Tv15Bkla" />
+
+                        <View
+                            style="@style/divider_1"
+                            android:layout_marginBottom="@dimen/px20"
+                            android:layout_marginTop="@dimen/px20" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            style="@style/Tv15Bkla" />
+
+                        <View
+                            style="@style/divider_1"
+                            android:layout_marginTop="@dimen/px20" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/px20"
+                            android:id="@+id/tv_length"
+                            style="@style/Tv15Bkla"  />
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            style="@style/Tv15Bkla"
+                            android:layout_marginTop="@dimen/px20" />
+
+                        <LinearLayout
+                            android:id="@+id/ly_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/px20"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/Tv15Bkla"
+                                android:text="@string/source_material" />
+
+                            <TextView
+                                android:gravity="left"
+                                android:id="@+id/tv_content"
+                                style="@style/Tv15gray_5D5C5A" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/ry_recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/px20"
+                            android:visibility="gone">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/rl_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/px20"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Tv15Bkla"
+                                android:text="@string/launch_list" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/px20" >
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                   <LinearLayout
+                       android:background="@color/white"
+                       android:paddingLeft="@dimen/px20"
+                       android:paddingRight="@dimen/px20"
+                       android:paddingBottom="@dimen/px20"
+                       android:layout_marginTop="@dimen/px20"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:layout_marginTop="@dimen/px20"
+                           android:visibility="gone"
+                           android:id="@+id/tv_red"
+                           style="@style/Tv15Bkla"  />
+
+                       <TextView
+                           android:layout_marginTop="@dimen/px20"
+                           android:id="@+id/tv_launch_time"
+                           style="@style/Tv15Bkla" />
+
+                       <TextView
+                           android:layout_marginTop="@dimen/px20"
+                           android:id="@+id/tv_price"
+                           android:visibility="gone"
+                           style="@style/Tv15Bkla" />
+
+                       <TextView
+                           android:gravity="left"
+                           android:layout_marginTop="@dimen/px20"
+                           android:id="@+id/tv_address"
+                           style="@style/Tv15Bkla"  />
+
+                       <TextView
+                           android:visibility="gone"
+                           android:layout_marginTop="@dimen/px20"
+                           android:id="@+id/tv_range"
+                           style="@style/Tv15Bkla"  />
+
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="@dimen/px20"
+                        android:layout_marginTop="@dimen/px20"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_examine_state"
+                            style="@style/Tv15Bkla" />
+
+                        <LinearLayout
+                            android:id="@+id/ly_reason"
+                            android:layout_marginBottom="@dimen/px40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/px20"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/Tv15Bkla"
+                                android:text="@string/reason" />
+
+                            <TextView
+                                android:gravity="left"
+                                android:id="@+id/tv_reason"
+                                style="@style/Tv15gray_5D5C5A" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px50"/>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+
+</layout>

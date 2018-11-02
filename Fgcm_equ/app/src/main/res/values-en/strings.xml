@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">fgsb</string>
+
+    <string name="equ_type">Equipment type</string>
+    <string name="set_name">Set Name</string>
+    <string name="equ_id">Equipment Id</string>
+    <string name="detailed_address">Detailed address</string>
+    <string name="longitude">longitude</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude_desc">Tip: Please fill in the latitude and longitude when the equipment is unable to locate, to 6 place after the decimal point.</string>
+    <string name="latitude_desc">Tip: Please fill in the latitude and longitude when the equipment is unable to locate, to 6 place after the decimal point.</string>
+    <string name="cancel">cancel</string>
+    <string name="submit">submit</string>
+    <string name="please_pwd">Please enter the login password</string>
+    <string name="submit1">submit</string>
+    <string name="modify_pwd">Modify the password</string>
+    <string name="seek_failed">The current location fails. Please check the network or locate the same permissions.</string>
+    <string name="please_new_pwd">Please enter a new password</string>
+    <string name="please_new_pwd2">Please enter the new password again</string>
+    <string name="prompt">If you forget your password, please reinstall the software. The initial password of the software is 123456.</string>
+
+</resources>

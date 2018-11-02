@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:isScrollContainer="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/px20">
+
+            <TextView
+                android:id="@+id/tv_play"
+                style="@style/Tv15gray_656565"
+                android:text="播放量" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                style="@style/Tv15Bkla"
+                android:layout_marginLeft="@dimen/px40"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="评论" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/Tv12gray_656565"
+                android:text="time" />
+
+        </LinearLayout>
+
+        <View style="@style/divider_1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:isScrollContainer="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                    android:id="@+id/refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <com.fanwang.fgcm.weight.WithScrollListView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:overScrollMode="never" />
+
+                </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/ly_edit"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/b34" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/px10">
+
+                    <TextView
+                        android:hint="有爱评论，说点儿好听的~"
+                        android:id="@+id/et_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/bt_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:padding="@dimen/px20"
+                        android:text="@string/Send_out"
+                        android:textColor="@color/white"
+                        app:rv_backgroundColor="@color/placeholder"
+                        app:rv_cornerRadius="@dimen/px10" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

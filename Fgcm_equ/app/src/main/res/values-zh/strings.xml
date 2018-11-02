@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">飞鸽传媒设备端</string>
+    <string name="equ_type">设备类型</string>
+    <string name="province">省</string>
+    <string name="city">市</string>
+    <string name="area">区</string>
+    <string name="set_name">设置名称</string>
+    <string name="equ_id">设备id</string>
+    <string name="detailed_address">详细地址</string>
+    <string name="longitude">经度</string>
+    <string name="latitude">纬度</string>
+    <string name="longitude_desc">提示：在设备无法定位的情况下请填写经纬度，精确到小数点后6位。</string>
+    <string name="latitude_desc">提示：在设备无法定位的情况下请填写经纬度，精确到小数点后6位。</string>
+    <string name="cancel">返回</string>
+    <string name="submit">提交</string>
+    <string name="submit1">确定</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="please_pwd">请输入登陆密码</string>
+    <string name="seek_failed">当前定位失败，请检查网络或者定位相同权限是否开启</string>
+    <string name="please_new_pwd">请输入新密码</string>
+    <string name="please_new_pwd2">请再次输入新密码</string>
+    <string name="prompt">如忘记密码，请重装软件，软件初始密码为123456</string>
+
+    <string name="title_dialog">Tips</string>
+    <string name="message_permission_rationale">Grant the following permissions to continue the program:\n\n%1$s</string>
+    <string name="message_overlay_failed">Your phone is not allowed us to draw on other applications.</string>
+    <string name="message_permission_always_failed">我们需要以下权限，请在设置中为我们开启：\n\n%1$s</string>
+    <string name="setting">设置</string>
+    <string name="resume">重启</string>
+
+
+
+</resources>

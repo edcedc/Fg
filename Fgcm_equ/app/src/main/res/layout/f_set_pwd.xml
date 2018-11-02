@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f4f4f4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px10"
+                app:rv_strokeColor="@color/gray_5D5C5A"
+                app:rv_strokeWidth="1dp">
+
+                <EditText
+                    android:id="@+id/et_pwd"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:ems="15"
+                    android:hint="@string/please_pwd" />
+
+            </com.flyco.roundview.RoundFrameLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bt_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px100"
+                android:ems="8"
+                android:gravity="center"
+                android:padding="@dimen/px20"
+                android:text="@string/submit1"
+                app:rv_backgroundPressColor="@color/gray_5D5C5A"
+                app:rv_cornerRadius="@dimen/px10"
+                app:rv_strokeColor="@color/gray_5D5C5A"
+                app:rv_strokeWidth="1dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundFrameLayout
+                android:id="@+id/fy_pwd1"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px10"
+                app:rv_strokeColor="@color/gray_5D5C5A"
+                app:rv_strokeWidth="1dp">
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/et_pwd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:ems="15"
+                    android:hint="@string/please_new_pwd" />
+
+            </com.flyco.roundview.RoundFrameLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bt_modify_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px100"
+                android:ems="8"
+                android:gravity="center"
+                android:padding="@dimen/px20"
+                android:text="@string/modify_pwd"
+                app:rv_backgroundPressColor="@color/gray_5D5C5A"
+                app:rv_cornerRadius="@dimen/px10"
+                app:rv_strokeColor="@color/gray_5D5C5A"
+                app:rv_strokeWidth="1dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ly_pwd2"
+            android:layout_marginTop="@dimen/px30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px10"
+                app:rv_strokeColor="@color/gray_5D5C5A"
+                app:rv_strokeWidth="1dp">
+
+                <EditText
+                    android:id="@+id/et_pwd2"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:ems="15"
+                    android:hint="@string/please_new_pwd2" />
+
+            </com.flyco.roundview.RoundFrameLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px100"
+                android:ems="8"
+                android:gravity="center"
+                android:padding="@dimen/px20"
+                android:text="@string/cancel"
+                app:rv_backgroundPressColor="@color/gray_5D5C5A"
+                app:rv_cornerRadius="@dimen/px10"
+                app:rv_strokeColor="@color/gray_5D5C5A"
+                app:rv_strokeWidth="1dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_prompt"
+            android:layout_marginTop="@dimen/px20"
+            android:text="@string/prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

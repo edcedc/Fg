@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <View
+            style="@style/divider_2" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/violet_773FE3"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:visibility="gone"
+                android:id="@+id/bt_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="@dimen/px30">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/b01" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/top_me"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <FrameLayout
+                android:id="@+id/bt_ZXing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="@dimen/px30">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/e01" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:layout_width="match_parent"
+            android:background="@color/white_f4f4f4"
+            android:id="@+id/refreshLayout"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ly_me"
+                        android:padding="@dimen/px40"
+                        android:gravity="center|left"
+                        android:background="@color/violet_773FE3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.fanwang.fgcm.weight.CircleImageView
+                            android:id="@+id/iv_head"
+                            android:src="@mipmap/icon_02"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_marginLeft="@dimen/px30"
+                            android:hint="未设置昵称"
+                            android:textColor="@color/white"
+                            style="@style/Tv15gray_656565" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+
+</layout>

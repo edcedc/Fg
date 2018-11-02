@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px10"
+        android:layout_marginLeft="@dimen/px10"
+        app:rv_strokeWidth="@dimen/px4"
+        app:rv_strokeColor="@color/violet_773FE3">
+
+        <com.fanwang.fgcm.weight.SizeImageView
+            android:id="@+id/iv_img"
+            android:src="@mipmap/place_holder"
+            android:layout_margin="@dimen/px4"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.flyco.roundview.RoundFrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_top" />
+
+            <View
+                android:visibility="visible"
+                style="@style/divider_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_f4f4f4"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px20"
+                android:paddingTop="@dimen/px50">
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:orientation="horizontal"
+                    app:rv_strokeColor="@color/gray_5D5C5A"
+                    app:rv_strokeWidth="@dimen/px2">
+
+                    <TextView
+                        android:id="@+id/tv_equ_range"
+                        style="@style/Tv15gray_5D5C5A"
+                        android:layout_width="@dimen/px200"
+                        android:background="@color/white"
+                        android:drawableRight="@mipmap/d11"
+                        android:hint="@string/equipment_range"
+                        android:padding="@dimen/px20" />
+
+                </com.flyco.roundview.RoundLinearLayout>
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:rv_strokeColor="@color/gray_5D5C5A"
+                    app:rv_strokeWidth="@dimen/px2">
+
+                    <TextView
+                        android:id="@+id/tv_equ_type"
+                        style="@style/Tv15gray_5D5C5A"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:drawableRight="@mipmap/d11"
+                        android:gravity="left"
+                        android:hint="@string/equipment_type"
+                        android:padding="@dimen/px20" />
+
+                </com.flyco.roundview.RoundLinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_screen"
+                    style="@style/Tv15gray_5D5C5A"
+                    android:padding="@dimen/px20"
+                    android:text="@string/screen"
+                    android:textColor="@color/violet_773FE3" />
+
+            </LinearLayout>
+
+                <android.support.v4.widget.NestedScrollView
+                    android:fillViewport="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                        android:id="@+id/refreshLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never" />
+
+                    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+                <View style="@style/divider_dropshadow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/px20">
+
+                    <LinearLayout
+                        android:id="@+id/ly_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/iv_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/d22" />
+
+                        <TextView
+                            style="@style/Tv15Bkla"
+                            android:layout_marginLeft="@dimen/px20"
+                            android:text="@string/total_selection" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.1dp"
+                        android:layout_weight="1" />
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/bt_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/px15"
+                        android:paddingLeft="@dimen/px40"
+                        android:paddingRight="@dimen/px40"
+                        android:paddingTop="@dimen/px15"
+                        android:text="@string/confirm"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size30"
+                        app:rv_backgroundColor="@color/violet_773FE3"
+                        app:rv_backgroundPressColor="@color/violet_562EA6"
+                        app:rv_cornerRadius="@dimen/px30" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_marginTop="@dimen/px180"
+            android:orientation="vertical"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="@dimen/px10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Tv15gray_5D5C5A"
+                    android:layout_margin="@dimen/px20"
+                    android:text="@string/location_position" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_location"
+                    style="@style/Tv15gray_5D5C5A"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20"
+                    android:gravity="left" />
+
+            </LinearLayout>
+
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_top" />
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_f4f4f4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/px40">
+
+                    <com.flyco.roundview.RoundLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:rv_cornerRadius="@dimen/px10"
+                        app:rv_strokeColor="@color/gray_999999"
+                        app:rv_strokeWidth="@dimen/px2">
+
+                        <TextView
+                            android:id="@+id/tv_amount_type"
+                            style="@style/Tv15Bkla"
+                            android:layout_margin="@dimen/px20"
+                            android:text="@string/set_single_amount" />
+
+
+                        <EditText
+                            android:id="@+id/et_number"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="0.00"
+                            android:inputType="number|numberDecimal"
+                            android:textSize="@dimen/size30" />
+
+                        <TextView
+
+                            style="@style/Tv15Bkla"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:layout_marginRight="@dimen/px20"
+                            android:text="@string/element" />
+
+
+                    </com.flyco.roundview.RoundLinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px10"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/px20"
+                        android:paddingRight="@dimen/px20">
+
+                        <TextView
+                            android:id="@+id/tv_draw"
+                            style="@style/Tv12gray_656565"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/set_red_Per_person_Fixed" />
+
+                        <TextView
+                            android:id="@+id/tv_reb_type"
+                            style="@style/Tv12gray_656565"
+                            android:text="@string/set_red_Fixed_amount"
+                            android:textColor="@color/violet_773FE3" />
+
+                    </LinearLayout>
+
+                    <com.flyco.roundview.RoundLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px50"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:rv_cornerRadius="@dimen/px10"
+                        app:rv_strokeColor="@color/gray_999999"
+                        app:rv_strokeWidth="@dimen/px2">
+
+                        <TextView
+                            style="@style/Tv15Bkla"
+                            android:layout_margin="@dimen/px20"
+                            android:text="@string/set_red_Number_of_red_packets" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0.1dp"
+                            android:layout_weight="1"
+                            android:background="@null" />
+
+                        <EditText
+                            android:id="@+id/et_individual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right|center"
+                            android:hint="@string/set_red_Fill_in_a_number"
+                            android:inputType="number"
+                            android:textSize="@dimen/size30" />
+
+                        <TextView
+                            style="@style/Tv15Bkla"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:layout_marginRight="@dimen/px20"
+                            android:text="@string/individual" />
+
+
+                    </com.flyco.roundview.RoundLinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="@dimen/px20"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="链接输入框"
+                            style="@style/Tv15Bkla" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_url"
+                            android:hint="可输入链接"
+                            android:textSize="15sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/px30"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/Tv15Bkla"
+                                    android:layout_marginRight="@dimen/px10"
+                                    android:text="￥"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_number"
+                                    style="@style/Tv15Bkla"
+                                    android:text="0.0"
+                                    android:textSize="@dimen/size49"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/px10"
+                                android:layout_marginLeft="@dimen/px20"
+                                android:text="支付时会另外收取5%的服务费用"
+                                style="@style/Tv12gray_5D5C5A" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/bt_submit"
+                    style="@style/RoundBlueTextView"
+                    android:layout_marginLeft="@dimen/px60"
+                    android:layout_marginRight="@dimen/px60"
+                    android:layout_marginTop="@dimen/px150"
+                    android:text="@string/set_red_Plug_money_into_a_red_bag"
+                    app:rv_backgroundColor="@color/violet_773FE3"
+                    app:rv_cornerRadius="@dimen/px30" />
+
+            </LinearLayout>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+</layout>

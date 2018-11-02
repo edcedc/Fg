@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:rv_cornerRadius="@dimen/px10"
+    app:rv_backgroundColor="@color/white">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trm_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.flyco.roundview.RoundFrameLayout>
+
+
+    <!--android:background="@drawable/trm_popup_bg"-->

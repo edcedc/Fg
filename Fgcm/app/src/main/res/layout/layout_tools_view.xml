@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:background="@color/black"
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:id="@+id/btn_cut"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:src="@mipmap/ic_cut_press" />
+
+    <ImageButton
+        android:id="@+id/btn_time_effect"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@mipmap/ic_time_effect_normal" />
+
+
+    <ImageButton
+        android:id="@+id/btn_motion_filter"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@mipmap/ic_motion" />
+
+    <ImageButton
+        android:id="@+id/btn_filter"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@mipmap/ic_beautiful" />
+
+    <ImageButton
+        android:id="@+id/btn_music"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@mipmap/ic_music" />
+
+    <ImageButton
+        android:id="@+id/btn_paster"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@mipmap/ic_paster" />
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/btn_word"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@mipmap/ic_word" />
+</LinearLayout>

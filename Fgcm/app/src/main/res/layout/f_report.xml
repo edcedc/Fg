@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_top" />
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:layout_width="match_parent"
+            android:background="@color/white_f4f4f4"
+            android:id="@+id/refreshLayout"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:padding="@dimen/px20"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.flyco.roundview.RoundFrameLayout
+                        app:rv_strokeWidth="@dimen/px2"
+                        app:rv_strokeColor="@color/black_1a1a1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:padding="@dimen/px20"
+                            android:gravity="left"
+                            android:textSize="@dimen/size30"
+                            android:hint="@string/please_report"
+                            android:id="@+id/et_text"
+                            android:background="@null"
+                            android:minLines="8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.flyco.roundview.RoundFrameLayout>
+
+                </FrameLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/bt_submit"
+                    style="@style/RoundBlueTextView"
+                    android:layout_margin="@dimen/px100"
+                    android:text="@string/confirm"
+                    app:rv_backgroundColor="@color/violet_773FE3"
+                    app:rv_backgroundPressColor="@color/violet_562EA6"
+                    app:rv_cornerRadius="@dimen/px30" />
+
+            </LinearLayout>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+</layout>

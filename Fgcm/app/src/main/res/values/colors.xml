@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_f4f4f4">#f4f4f4</color>
+
+    <color name="gray_5D5C5A">#5D5C5A</color>
+    <color name="black_1a1a1a">#1a1a1a</color>
+    <color name="gray_656565">#656565</color>
+    <color name="gray_E6E6E6">#E6E6E6</color>
+    <color name="gray_999999">#999999</color>
+    <color name="violet_773FE3">#773FE3</color>
+    <color name="violet_B299EF">#B299EF</color>
+    <color name="violet_562EA6">#562EA6</color>
+    <color name="violet_532C9E">#532C9E</color>
+    <color name="violet_B59DEE">#B59DEE</color>
+    <color name="orange_E37A3E">#E37A3E</color>
+    <color name="orange_BA6432">#BA6432</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#c9c9c9</color>
+    <color name="transparent90_white">#E5ffffff</color>
+    <color name="placeholder">#33000000</color>
+    <color name="color_f6">#f6f6f6</color>
+
+    <color name="record_speed_text_normal">#ffffff</color>
+    <color name="record_speed_text_select">#00f5ac</color>
+    <color name="colorGreen">#0accac</color>
+    <color name="colorGray7">#D8D8D8</color>
+    <color name="record_progress_bg">#66000000</color> <!-- 40%不透明度 -->
+    <color name="record_progress">#00f5ac</color>
+    <color name="record_progress_pending">#10acc0</color>
+    <color name="input_text_color">#00f5ac</color>
+    <!-- 裁剪范围颜色 -->
+    <color name="colorAccentTransparent30">#4d0accac</color>
+    <color name="colorTintRed">#FF4C58</color>
+    <color name="transparent">#00000000</color>
+    <color name="time_bg_selected">#AA0ACCAC</color>
+    <color name="time_bg_normal">#0accac</color>
+    <!--动态滤镜的颜色-->
+    <color name="spirit_out_color">#EC5F9B</color>
+    <color name="spirit_out_color_press">#AAEC5F9B</color>
+
+    <color name="screen_split">#EC8435</color>
+    <color name="screen_split_press">#AAEC8435</color>
+
+    <color name="light_wave">#1FBCB6</color>
+    <color name="light_wave_press">#AA1FBCB6</color>
+
+    <color name="dark_illusion">#449FF3</color>
+    <color name="dark_illusion_press">#AA449FF3</color>
+    <color name="colorGray4">#787878</color>
+    <color name="line_btn">#BBBBBB</color>
+    <color name="black">#000000</color>
+    <color name="colorGray6">#141414</color>
+    <color name="background_gray1">#EBEBEB</color>
+
+</resources>

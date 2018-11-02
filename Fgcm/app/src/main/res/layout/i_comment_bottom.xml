@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <com.fanwang.fgcm.weight.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/px85"
+            android:layout_height="@dimen/px85"
+            style="@style/circle_img"
+            android:layout_margin="@dimen/px15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px15"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/Tv12gray_656565"
+                    android:text="name" />
+
+                <TextView
+                    android:id="@+id/tv_describe"
+                    style="@style/Tv15Bkla"
+                    android:text="name" />
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:id="@+id/tv_time"
+                        style="@style/Tv12gray_656565"
+                        android:text="name" />
+
+                    <FrameLayout
+                        android:id="@+id/fy_praise"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_praise"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/b17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.fanwang.fgcm.weight.WithScrollListView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:layout_marginTop="@dimen/px15"
+                android:background="@color/white_f4f4f4" />
+
+            <TextView
+                android:paddingBottom="@dimen/px10"
+                android:text="xxx"
+                android:paddingLeft="@dimen/px15"
+                android:layout_width="match_parent"
+                android:background="@color/white_f4f4f4"
+                android:visibility="gone"
+                android:id="@+id/tv_more"
+                android:gravity="left"
+                style="@style/Tv12gray_656565" />
+
+            <View
+                android:layout_marginRight="@dimen/px20"
+                style="@style/divider_1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>

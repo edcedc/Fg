@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_top" />
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:id="@+id/refreshLayout"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_img"
+                    android:layout_marginTop="@dimen/px100"
+                    android:src="@mipmap/place_holder"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="扫码注册APP"
+                    style="@style/Tv15Bkla" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/bt_submit"
+                    android:layout_marginLeft="@dimen/px200"
+                    android:layout_marginRight="@dimen/px200"
+                    style="@style/RoundBlueTextView"
+                    android:layout_marginTop="@dimen/px50"
+                    android:text="分享注册链接"
+                    app:rv_backgroundColor="@color/violet_773FE3"
+                    app:rv_backgroundPressColor="@color/violet_562EA6"
+                    app:rv_cornerRadius="@dimen/px30" />
+
+            </LinearLayout>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+</layout>

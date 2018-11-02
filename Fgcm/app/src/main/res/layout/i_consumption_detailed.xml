@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px30"
+        android:paddingLeft="@dimen/px20"
+        android:paddingRight="@dimen/px20"
+        android:paddingTop="@dimen/px30">
+
+        <TextView
+            android:gravity="left"
+            android:layout_weight="1"
+            style="@style/Tv12gray_656565"
+            android:id="@+id/tv_time"/>
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/tv_name"
+            android:layout_weight="1"
+            style="@style/Tv15Bkla" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_number"
+            style="@style/Tv15Bkla"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_1"/>
+
+</LinearLayout>

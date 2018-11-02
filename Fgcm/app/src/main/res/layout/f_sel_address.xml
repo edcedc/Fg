@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_top" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px50"
+                android:background="@color/violet_773FE3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.baidu.mapapi.map.TextureMapView
+                    android:id="@+id/bmapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_marginTop="@dimen/px160"
+            android:orientation="vertical"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="@dimen/px10">
+
+            <LinearLayout
+                android:id="@+id/ly_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/px20">
+
+                <TextView
+                    style="@style/Tv15gray_5D5C5A"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="@string/Please_enter_the_placement_position" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_999999" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:background="@mipmap/d03" />
+
+            </LinearLayout>
+
+            <View style="@style/divider_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Tv15gray_5D5C5A"
+                    android:layout_margin="@dimen/px20"
+                    android:text="@string/location_position" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    style="@style/Tv15gray_5D5C5A"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20"
+                    android:gravity="left" />
+
+            </LinearLayout>
+
+            <View style="@style/divider_1" />
+
+            <LinearLayout
+                android:id="@+id/ly_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Tv15gray_5D5C5A"
+                    android:layout_margin="@dimen/px20"
+                    android:text="@string/scope_delivery" />
+
+                <TextView
+                    android:id="@+id/tv_delivery"
+                    style="@style/Tv15gray_5D5C5A"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20"
+                    android:background="@mipmap/d13"
+                    android:drawableRight="@mipmap/d11"
+                    android:gravity="left|center"
+                    android:paddingLeft="@dimen/px20"
+                    android:paddingRight="@dimen/px20"
+                    android:text="@string/scope_deliveryy" />
+
+            </LinearLayout>
+
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </FrameLayout>
+
+</layout>

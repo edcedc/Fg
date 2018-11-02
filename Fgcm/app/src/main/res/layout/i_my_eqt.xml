@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/px20">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/d16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Tv15Bkla" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/Tv15gray_5D5C5A"  />
+
+            <TextView
+                android:id="@+id/tv_model"
+                style="@style/Tv15gray_5D5C5A" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                style="@style/Tv15gray_5D5C5A"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/divider_1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/bt_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_marginTop="@dimen/px20"
+            android:paddingBottom="@dimen/px10"
+            android:paddingLeft="@dimen/px40"
+            android:paddingRight="@dimen/px40"
+            android:paddingTop="@dimen/px10"
+            android:text="@string/see"
+            app:rv_cornerRadius="@dimen/px10"
+            app:rv_strokeColor="@color/violet_773FE3"
+            app:rv_strokeWidth="@dimen/px2" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_height="@dimen/px20"
+        style="@style/divider_1"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white_f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/px20"
+        android:gravity="center"
+        android:padding="@dimen/px30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <com.fanwang.fgcm.weight.RoundImageView
+           android:id="@+id/iv_img"
+           android:src="@mipmap/place_holder"
+           android:scaleType="centerCrop"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="80dp" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Tv12Bkla"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/Tv12gray_656565"/>
+            
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/bt_submit"
+            android:layout_width="wrap_content"
+            style="@style/RoundBlueTextView"
+            android:text="@string/land_film"
+            android:textSize="@dimen/size24_"
+            app:rv_backgroundColor="@color/violet_773FE3"
+            app:rv_backgroundPressColor="@color/violet_562EA6"
+            app:rv_cornerRadius="@dimen/px10" />
+
+    </LinearLayout>
+
+</LinearLayout>

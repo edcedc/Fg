@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:rv_cornerRadius="@dimen/px10"
+        app:rv_backgroundColor="@color/white">
+
+        <TextView
+            android:layout_marginTop="@dimen/px20"
+            android:layout_marginBottom="@dimen/px20"
+            android:id="@+id/tv_text"
+            android:padding="@dimen/px40"
+            android:layout_width="match_parent"
+            android:text="是否拨打商家号码?"
+            style="@style/Tv15Bkla"/>
+
+        <View
+            style="@style/divider_1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bt_submit"
+                android:layout_weight="1"
+                android:padding="@dimen/px20"
+                android:layout_width="match_parent"
+                android:text="确定"
+                style="@style/Tv15Bkla"/>
+
+            <TextView
+                android:id="@+id/bt_cancel"
+                android:layout_weight="1"
+                android:padding="@dimen/px20"
+                android:layout_width="match_parent"
+                android:text="取消"
+                style="@style/Tv15Bkla"/>
+
+        </LinearLayout>
+
+    </com.flyco.roundview.RoundLinearLayout>
+
+</FrameLayout>

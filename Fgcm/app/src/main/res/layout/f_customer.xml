@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_top" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_f4f4f4"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/px30"
+                        android:paddingTop="@dimen/px30">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/violet_773FE3" />
+
+                        <TextView
+                            style="@style/Tv15Bkla"
+                            android:layout_marginLeft="@dimen/px20"
+                            android:text="@string/hotspot_issues" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Tv12gray_656565"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/white"
+                android:gravity="left"
+                android:padding="@dimen/px30"
+                android:text="联系方式\n如以上问题为能帮助你，请直接联系在线客服。\n客服热线：\n微信公众号：\n（客服工作时间为每天：10：00-22：00。其余时间请将问题反馈至微信公众号，我们讲尽快回复您。）" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bt_service"
+                style="@style/RoundBlueTextView"
+                android:layout_margin="@dimen/px100"
+                android:text="@string/online_service"
+                app:rv_backgroundColor="@color/violet_773FE3"
+                app:rv_backgroundPressColor="@color/violet_562EA6"
+                app:rv_cornerRadius="@dimen/px30" />
+
+        </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

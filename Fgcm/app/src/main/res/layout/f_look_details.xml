@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/include_top" />
+
+            <TextView
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:text="查看详情"
+                android:id="@+id/tv_url"
+                android:layout_gravity="bottom|right"
+                android:paddingRight="@dimen/px100"
+                style="@style/Tv15Bkla"
+                android:layout_margin="@dimen/px40"  />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_fixed"
+                style="@style/Tv15Bkla"
+                android:layout_margin="@dimen/px20"
+                android:gravity="left"
+                android:visibility="gone" />
+
+            <com.fanwang.fgcm.weight.AutoScrollTextView
+                android:id="@+id/tv_roll"
+                style="@style/Tv15Bkla"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/c01"
+                android:drawablePadding="@dimen/px20"
+                android:gravity="center|left"
+                android:padding="@dimen/px20"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <com.fanwang.fgcm.video.LandLayoutVideo
+                android:id="@+id/video_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:banner_pageChangeDuration="1000"
+                app:banner_pointAutoPlayAble="false"
+                app:banner_pointContainerBackground="@android:color/transparent"
+                app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+                app:banner_pointTopBottomMargin="15dp"
+                app:banner_transitionEffect="defaultEffect" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view"
+        android:visibility="gone"
+        android:layout_height="@dimen/px20"
+        style="@style/divider_1"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:background="?attr/selectableItemBackground"
+        android:paddingRight="@dimen/px20"
+        android:paddingLeft="@dimen/px20"
+        android:paddingTop="@dimen/px30"
+        android:paddingBottom="@dimen/px30"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            android:id="@+id/iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/tv_title"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:text="name"
+            style="@style/Tv15Bkla" />
+
+        <ImageView
+            android:background="@mipmap/d20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_1"/>
+
+</LinearLayout>

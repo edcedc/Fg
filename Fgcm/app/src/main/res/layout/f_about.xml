@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_top" />
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:layout_width="match_parent"
+            android:background="@color/white_f4f4f4"
+            android:id="@+id/refreshLayout"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_img"
+                        android:layout_margin="@dimen/px100"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/e34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ly_report"
+                            android:background="?attr/selectableItemBackground"
+                            android:paddingRight="@dimen/px20"
+                            android:paddingLeft="@dimen/px20"
+                            android:paddingTop="@dimen/px30"
+                            android:paddingBottom="@dimen/px30"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:text="@string/complaints_report"
+                                style="@style/Tv15Bkla" />
+
+                            <ImageView
+                                android:background="@mipmap/d20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/divider_1"/>
+
+                        <LinearLayout
+                            android:id="@+id/ly_merchant"
+                            android:background="?attr/selectableItemBackground"
+                            android:paddingRight="@dimen/px20"
+                            android:paddingLeft="@dimen/px20"
+                            android:paddingTop="@dimen/px30"
+                            android:paddingBottom="@dimen/px30"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:text="@string/contact_merchant"
+                                style="@style/Tv15Bkla" />
+
+                            <ImageView
+                                android:background="@mipmap/d20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/divider_1"/>
+
+                        <LinearLayout
+                            android:id="@+id/ly_version"
+                            android:background="?attr/selectableItemBackground"
+                            android:paddingRight="@dimen/px20"
+                            android:paddingLeft="@dimen/px20"
+                            android:paddingTop="@dimen/px30"
+                            android:paddingBottom="@dimen/px30"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:text="@string/check_version"
+                                style="@style/Tv15Bkla" />
+
+                            <TextView
+                                android:id="@+id/tv_version"
+                                style="@style/Tv15gray_656565" />
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/divider_1"/>
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:max="100"
+                        android:progress="0" />
+
+                    <com.fanwang.fgcm.weight.X5WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"  />
+
+                </LinearLayout>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+
+</layout>

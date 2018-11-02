@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_top" />
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_f4f4f4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/px40">
+
+                    <TextView
+                        style="@style/Tv15Bkla"
+                        android:text="@string/forward_element" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Tv15Bkla"
+                            android:text="￥" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            style="@style/Tv15Bkla"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                    <com.flyco.roundview.RoundFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px60"
+                        app:rv_backgroundColor="@color/white"
+                        app:rv_cornerRadius="@dimen/px10"
+                        app:rv_strokeColor="@color/gray_999999"
+                        app:rv_strokeWidth="@dimen/px2">
+
+                        <EditText
+                            android:id="@+id/et_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="@string/forward_money"
+                            android:inputType="number"
+                            android:padding="@dimen/px20"
+                            android:textSize="@dimen/size30" />
+
+                    </com.flyco.roundview.RoundFrameLayout>
+
+                    <TextView
+                        style="@style/Tv12gray_656565"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:layout_marginTop="@dimen/px20"
+                        android:gravity="left"
+                        android:text="@string/forward_notice" />
+
+                    <FrameLayout
+                        android:id="@+id/fy_card"
+                        android:layout_margin="@dimen/px20"
+                        android:background="@mipmap/e20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/px40"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:textColor="@color/white"
+                                style="@style/Tv15Bkla" />
+
+                            <TextView
+                                android:id="@+id/tv_number"
+                                android:textColor="@color/white"
+                                style="@style/Tv15Bkla" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/bt_bring"
+                    style="@style/RoundBlueTextView"
+                    android:layout_margin="@dimen/px100"
+                    android:text="@string/bring"
+                    app:rv_backgroundColor="@color/violet_773FE3"
+                    app:rv_backgroundPressColor="@color/violet_562EA6"
+                    app:rv_cornerRadius="@dimen/px30" />
+            </LinearLayout>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+</layout>

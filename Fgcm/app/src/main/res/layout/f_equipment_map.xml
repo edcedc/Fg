@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_top"/>
+
+            <View
+                android:visibility="visible"
+                style="@style/divider_2" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.baidu.mapapi.map.TextureMapView
+                    android:id="@+id/bmapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_marginTop="@dimen/px180"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            app:rv_cornerRadius="@dimen/px10"
+            app:rv_backgroundColor="@color/white">
+
+            <LinearLayout
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_margin="@dimen/px20"
+                    android:text="@string/location_position"
+                    style="@style/Tv15gray_5D5C5A" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:gravity="left"
+                    android:id="@+id/tv_location"
+                    style="@style/Tv15gray_5D5C5A" />
+
+            </LinearLayout>
+
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </FrameLayout>
+
+</layout>

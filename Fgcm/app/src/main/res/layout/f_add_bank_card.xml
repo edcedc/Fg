@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_top"/>
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:layout_width="match_parent"
+            android:background="@color/white_f4f4f4"
+            android:id="@+id/refreshLayout"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="@dimen/px40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <com.flyco.roundview.RoundFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:rv_backgroundColor="@color/white"
+                        app:rv_cornerRadius="@dimen/px10"
+                        app:rv_strokeColor="@color/gray_999999"
+                        app:rv_strokeWidth="@dimen/px2">
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                            android:background="@null"
+                            android:hint="@string/please_card_name"
+                            android:padding="@dimen/px30"
+                            android:textSize="@dimen/size30" />
+
+                    </com.flyco.roundview.RoundFrameLayout>
+
+                    <com.flyco.roundview.RoundFrameLayout
+                        android:layout_marginTop="@dimen/px20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:rv_backgroundColor="@color/white"
+                        app:rv_cornerRadius="@dimen/px10"
+                        app:rv_strokeColor="@color/gray_999999"
+                        app:rv_strokeWidth="@dimen/px2">
+
+                        <EditText
+                            android:id="@+id/et_card_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="@string/please_card"
+                            android:inputType="number"
+                            android:padding="@dimen/px30"
+                            android:textSize="@dimen/size30" />
+
+                    </com.flyco.roundview.RoundFrameLayout>
+
+                    <com.flyco.roundview.RoundFrameLayout
+                        android:layout_marginTop="@dimen/px20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:rv_backgroundColor="@color/white"
+                        app:rv_cornerRadius="@dimen/px10"
+                        app:rv_strokeColor="@color/gray_999999"
+                        app:rv_strokeWidth="@dimen/px2">
+
+                        <EditText
+                            android:id="@+id/tv_opening_bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="@string/please_bank"
+                            android:inputType="text"
+                            android:padding="@dimen/px30"
+                            android:textSize="@dimen/size30" />
+
+                    </com.flyco.roundview.RoundFrameLayout>
+
+                    <com.flyco.roundview.RoundLinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/px20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:rv_backgroundColor="@color/white"
+                        app:rv_cornerRadius="@dimen/px10"
+                        app:rv_strokeColor="@color/gray_999999"
+                        app:rv_strokeWidth="@dimen/px2">
+
+                        <TextView
+                            android:padding="@dimen/px30"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/please_bank"
+                            android:inputType="number"
+                            android:textSize="@dimen/size30" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/px20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/d11"/>
+
+                    </com.flyco.roundview.RoundLinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_selected"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px40"
+                        android:button="@drawable/selector_check"
+                        android:paddingLeft="@dimen/px20"
+                        android:text="@string/agreement_agreement"
+                        android:textSize="@dimen/size22" />
+
+                </LinearLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/bt_submit"
+                    style="@style/RoundBlueTextView"
+                    android:layout_margin="@dimen/px100"
+                    android:text="@string/add"
+                    app:rv_backgroundColor="@color/violet_773FE3"
+                    app:rv_backgroundPressColor="@color/violet_562EA6"
+                    app:rv_cornerRadius="@dimen/px30" />
+
+            </LinearLayout>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+</layout>
