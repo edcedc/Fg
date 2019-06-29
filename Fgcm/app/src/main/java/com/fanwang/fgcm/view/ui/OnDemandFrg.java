@@ -130,27 +130,27 @@ public class OnDemandFrg extends BaseFragment<FOnDemandBinding>implements IBaseL
         });
     }
 
-    @Override
-    public void onError(Throwable e) {
-        super.setRefreshLayout(pagerNumber, mB.refreshLayout);
-    }
-
-    @Override
-    public void setData(Object data) {
-        if (pagerNumber == 1) {
-            listBean.clear();
-            mB.refreshLayout.finishRefreshing();
-        } else {
-            mB.refreshLayout.finishLoadmore();
+        @Override
+        public void onError(Throwable e) {
+            super.setRefreshLayout(pagerNumber, mB.refreshLayout);
         }
-        listBean.addAll((List<DataBean>) data);
-        adapter.notifyDataSetChanged();
-    }
 
-    @Override
-    public void setRefreshLayoutMode(int totalRow) {
-        super.setRefreshLayoutMode(listBean.size(), totalRow, mB.refreshLayout);
-    }
+        @Override
+        public void setData(Object data) {
+            if (pagerNumber == 1) {
+                listBean.clear();
+                mB.refreshLayout.finishRefreshing();
+            } else {
+                mB.refreshLayout.finishLoadmore();
+            }
+            listBean.addAll((List<DataBean>) data);
+            adapter.notifyDataSetChanged();
+        }
+
+        @Override
+        public void setRefreshLayoutMode(int totalRow) {
+            super.setRefreshLayoutMode(listBean.size(), totalRow, mB.refreshLayout);
+        }
 
     @Override
     public void onClick(View v) {

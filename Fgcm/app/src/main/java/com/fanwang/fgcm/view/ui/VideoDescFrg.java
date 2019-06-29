@@ -195,7 +195,7 @@ public class VideoDescFrg extends BaseFragment<FVideoDescBinding> implements Vie
                 .setIsTouchWiget(false)
                 .setRotateViewAuto(false)
                 .setLockLand(false)
-                .setShowFullAnimation(false)
+                .setShowFullAnimation(true)
                 .setNeedLockFull(true)
                 .setSeekRatio(1)
                 .setUrl(videoUrl)
